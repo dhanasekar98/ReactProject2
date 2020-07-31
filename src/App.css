@@ -1,0 +1,71 @@
+*{
+  padding:0;
+  margin:0;
+  align-items: center;
+}
+
+
+  .results .result {
+    width: 33.33%;
+    min-width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .md-cancel{
+    margin-top: 25px;
+  }
+  .md-cancel:hover{
+    
+    color:white;
+ 
+  }
+  .md-cancel2{
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+
+  
+  .md-cancel-div:hover{
+    background-color: lemonchiffon;
+    opacity:92% ;
+  }
+    .results .result:hover H3 {
+      background:linear-gradient( #38b,white,blue );
+      color: #223343;
+      box-shadow:0 0 25px black;
+    }
+    .results .result:hover Image2 {
+      
+      box-shadow:0 0 25px black;
+    }
+    .res{
+      position:absolute;
+      top:110px;
+      left:490px;
+      right:0px;
+      background:black;
+      text-align:left;
+      width:50vh;
+      border-bottom-left-radius:10px;
+      border-bottom-right-radius:10px;   
+  }
+  
+  .Play{
+    position: absolute;
+    left:40%;
+    top:10%;
+    color:white;
+    opacity: 50%;
+    cursor: pointer;
+  }
+  .Play:hover{
+    color:black;
+    opacity: 100%;
+  }
+  
+  .seconddiv.h1{
+    text-align: left;
+  }
+

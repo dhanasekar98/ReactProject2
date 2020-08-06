@@ -136,7 +136,7 @@ ul ol h3{
     text-align:center;
     margin-left:120px;  
 }
-
+                                           
 `
 const Image2=Styled.img`
 

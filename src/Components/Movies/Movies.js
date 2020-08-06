@@ -13,9 +13,12 @@ padding: 15px;
 display: flex;
 flex-wrap: wrap;
 margin: 0px -15px;
-margin-top:-200px;
+margin-top:-300px;
 align-items:center;
-transition:0.7s`;
+transition:0.7s
+&:active{
+    margin-top:-500px;
+}`;
 const Div2=Styled.div`
 height: 100%;
 width: 0;
@@ -69,16 +72,10 @@ text-align:left;`;
 const Hi2=Styled.h3`
 text-align:left;
 color:#999;
-font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-weight:none;`;
 
-const H4=Styled.h4`
-position: absolute;
-font-family: "Trebuchet MS", Helvetica, sans-serif;
-font-weight:none;
-top:49.5%;
-left:21%;
-color:#999;`
+
 
 const Div6=Styled.div`
 width: 75px;
@@ -126,8 +123,8 @@ function Movies () {
     }]
     
     function openSlide(){
-        document.getElementById('menus').style.width = '40%';
-        document.getElementById('container').style.marginRight='30%';
+        document.getElementById('menus').style.width = '50%';
+        document.getElementById('container').style.marginRight='40%';
         document.getElementById('menu').style.width='0px';
     }
     function CloseSlide(){

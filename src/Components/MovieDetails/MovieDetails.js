@@ -23,28 +23,38 @@ background:black;
 
 const H3=Styled.h3`
     color: #FFF;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
     padding: 15px;
-    width:124px;
+    width:130px;
+    margin-top:0px;
     text-align:left;
     background: #223343;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 	flex: 1 1 100%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: 0.4s ease-out;`;
+    transition: 0.4s ease-out;
+    &:hover{
+        box-shadow:0 0 15px #fff;
+    }`;
 
-const Image2=Styled.img`
+const Image=Styled.img`
 border-radius:10px;
 margin-bottom:0px;
 border-bottom-left-radius: 0px;
 border-bottom-right-radius: 0px;
 width:150px;
-hover{
-	box-shadow:0 0 25px black;
+height:220px;
+&:hover {
+    box-shadow: 0 0 5px #2196f3;
+    width:160px;
 }
 `;
+
+const H5=Styled.h3`
+font-size:10px;
+color:#999;`;
 
 
 
@@ -75,8 +85,8 @@ const MovieDetails=(props)=> {
                   <AiOutlineStar size="1rem" color="#999" />
                   {Results.vote_average}
                   </Span>
-			 <Image2 src={`https://image.tmdb.org/t/p/w200${Results.poster_path}`} alt={Results.title} />
-             <H3>{Results.title}<h5>Drama</h5></H3>
+			 <Image src={`https://image.tmdb.org/t/p/w200${Results.poster_path}`} alt={Results.title} />
+             <H3>{Results.title}<H5>Drama</H5></H3>
 		   
 		</div>
 		</div>
